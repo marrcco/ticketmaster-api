@@ -33,16 +33,17 @@ Install dependencies:
 ```bash
 pip install playwright pandas
 playwright install chromium
-🚀 Usage
+```
+## 🚀 Usage
 Clone this repo:
 
-bash
-Copy code
+```bash
 git clone https://github.com/your-username/ticketmaster-scraper.git
 cd ticketmaster-scraper
+```
 Run the script with a Ticketmaster event URL:
 
-bash```
+```bash
 Example inside the script:
 
 python
@@ -59,7 +60,6 @@ raw-data/{match_id}.csv
 📂 Output Example
 JSON (json-data/060062F1D5BB5334.json)
 json
-Copy code
 [
   {
     "_embedded": {
