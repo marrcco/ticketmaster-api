@@ -82,6 +82,7 @@ Copy code
 CSV (raw-data/060062F1D5BB5334.csv)
 name	rank	currency	offer_type	ticket_type_id	description	list_price	total_price	selleable_quantities
 Section 102	1	USD	standard	12345	Lower Bowl	150.0	165.0	4
+```
 
 ## 🛠️ Customization
 Change the page_url variable in scraper.py to any Ticketmaster event URL.
