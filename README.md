@@ -42,25 +42,19 @@ git clone https://github.com/your-username/ticketmaster-scraper.git
 cd ticketmaster-scraper
 Run the script with a Ticketmaster event URL:
 
-bash
-Copy code
-python scraper.py
+bash```
 Example inside the script:
 
 python
-Copy code
 page_url = "https://www.ticketmaster.com/minnesota-wild-vs-san-jose-sharks-saint-paul-minnesota-11-11-2025/event/060062F1D5BB5334"
 The scraper will:
 
 Save captured JSON response(s) to:
 
 pgsql
-Copy code
 json-data/{match_id}.json
 Save structured ticket data to:
 
-kotlin
-Copy code
 raw-data/{match_id}.csv
 📂 Output Example
 JSON (json-data/060062F1D5BB5334.json)
@@ -89,13 +83,13 @@ CSV (raw-data/060062F1D5BB5334.csv)
 name	rank	currency	offer_type	ticket_type_id	description	list_price	total_price	selleable_quantities
 Section 102	1	USD	standard	12345	Lower Bowl	150.0	165.0	4
 
-🛠️ Customization
+## 🛠️ Customization
 Change the page_url variable in scraper.py to any Ticketmaster event URL.
 
 Adjust the wait_for_timeout if events load slower.
 
 Extend the data extraction block to include more fields if needed.
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 This project is for educational and personal use only.
 Scraping Ticketmaster may violate their Terms of Service — use responsibly.
